@@ -1,0 +1,236 @@
+Selvfølgelig! Her kommer en fuldstændig kravspecifikation med hele storyline, tekst og alle nødvendige cases til læringsspillet om uregelmæssige verber. Denne specifikation kan bruges direkte af en programmør til at udvikle løsningen.
+
+---
+
+## **Kravspecifikation for Interaktiv Læringsside om Uregelmæssige Verber**
+
+### **Projektbeskrivelse**
+
+Dette projekt er en interaktiv læringsside designet til at hjælpe børn med at lære uregelmæssige verber i engelsk på en sjov og engagerende måde. Siden har en spil-lignende struktur med levels, missioner og belønninger, der motiverer brugeren til at lære og praktisere uregelmæssige verber.
+
+### **Målgruppe**
+
+- Primært børn i alderen 8-12 år, der lærer engelsk som fremmedsprog.
+
+### **Teknisk Specifikation**
+
+- **Platform**: Hjemmesiden skal kunne afvikles på GitHub Pages.
+- **Teknologier**: HTML, CSS, JavaScript (ingen backend eller database nødvendig, brug LocalStorage til at gemme fremskridt).
+- **Responsivt Design**: Hjemmesiden skal være fuldt responsiv og fungere godt på både desktop og mobile enheder.
+- **Browserkompatibilitet**: Hjemmesiden skal fungere på de nyeste versioner af Chrome, Firefox, Safari og Edge.
+
+### **Funktionelle Krav**
+
+#### 1. **Forside**
+
+- Introduktion til uregelmæssige verber med en kort og børnevenlig tekst.
+- En startknap, der leder brugeren til første level af spillet.
+
+**Tekst til Forside:**
+
+```
+Velkommen til Verbenes Eventyr! I dette spil skal du hjælpe ridderen Alex med at redde Verbernes Rige ved at mestre de magiske uregelmæssige verber. Klik på 'Start Eventyret' for at begynde!
+```
+
+#### 2. **Levels og Progression**
+
+- Brugeren starter på Level 1 og kan kun låse næste level op, når det nuværende level er fuldført.
+- Hvert level introducerer nye uregelmæssige verber og øvelser.
+
+**Level 1: Skattens Hemmelighed**
+
+- **Introduktionstekst:**
+
+```
+Level 1: Skattens Hemmelighed. Ridderen Alex har fundet et gammelt kort, der viser vej til en skjult skat. For at finde skatten skal du hjælpe Alex med at bruge de rigtige verber til at løse gåderne på vejen.
+```
+
+- **Verber i Level 1:**
+  - Infinitiv: go, see, make, take, come
+  - Datid: went, saw, made, took, came
+  - Perfektum participium: gone, seen, made, taken, come
+
+- **Opgaver i Level 1:**
+  - **Opgave 1:** "Sæt verbet i datid: 'Alex (go) to the ancient cave.'"
+    - Korrekt svar: went
+  - **Opgave 2:** "Vælg den korrekte form: 'He (see) a strange light in the distance.'"
+    - Korrekt svar: saw
+  - **Opgave 3:** "Sæt verbet i perfektum participium: 'Alex has (make) a plan to find the treasure.'"
+    - Korrekt svar: made
+
+**Level 2: Dragens Hule**
+
+- **Introduktionstekst:**
+
+```
+Level 2: Dragens Hule. Alex er nået frem til en frygtindgydende hule, hvor en drage vogter over skatten. For at besejre dragen og få adgang til skatten skal du hjælpe Alex med at bruge de rigtige uregelmæssige verber i kamp.
+```
+
+- **Verber i Level 2:**
+  - Infinitiv: fight, hide, find, give, take
+  - Datid: fought, hid, found, gave, took
+  - Perfektum participium: fought, hidden, found, given, taken
+
+- **Opgaver i Level 2:**
+  - **Opgave 1:** "Sæt verbet i datid: 'Alex (fight) the dragon bravely.'"
+    - Korrekt svar: fought
+  - **Opgave 2:** "Vælg den korrekte form: 'The dragon (hide) the treasure deep inside the cave.'"
+    - Korrekt svar: hid
+  - **Opgave 3:** "Sæt verbet i perfektum participium: 'Alex has (find) the hidden entrance to the treasure room.'"
+    - Korrekt svar: found
+
+**Level 3: Troldmandens Forbandelse**
+
+- **Introduktionstekst:**
+
+```
+Level 3: Troldmandens Forbandelse. Efter at have fundet skatten opdager Alex, at den er forbandet af en ond troldmand. For at ophæve forbandelsen skal du hjælpe Alex med at bruge de rigtige verber i de magiske formularer.
+```
+
+- **Verber i Level 3:**
+  - Infinitiv: break, choose, speak, bring, leave
+  - Datid: broke, chose, spoke, brought, left
+  - Perfektum participium: broken, chosen, spoken, brought, left
+
+- **Opgaver i Level 3:**
+  - **Opgave 1:** "Sæt verbet i datid: 'Alex (break) the curse with the correct spell.'"
+    - Korrekt svar: broke
+  - **Opgave 2:** "Vælg den korrekte form: 'He (choose) the right spell from the ancient book.'"
+    - Korrekt svar: chose
+  - **Opgave 3:** "Sæt verbet i perfektum participium: 'The curse has been (break), and the treasure is free!'"
+    - Korrekt svar: broken
+
+**Level 4: Kongens Gave**
+
+- **Introduktionstekst:**
+
+```
+Level 4: Kongens Gave. Alex har ophævet forbandelsen og taget skatten med hjem til kongen. For at modtage kongens belønning skal Alex demonstrere sin viden om flere uregelmæssige verber.
+```
+
+- **Verber i Level 4:**
+  - Infinitiv: give, run, win, ride, write
+  - Datid: gave, ran, won, rode, wrote
+  - Perfektum participium: given, run, won, ridden, written
+
+- **Opgaver i Level 4:**
+  - **Opgave 1:** "Sæt verbet i datid: 'The king (give) Alex a grand reward.'"
+    - Korrekt svar: gave
+  - **Opgave 2:** "Vælg den korrekte form: 'Alex (ride) his horse back home after the ceremony.'"
+    - Korrekt svar: rode
+  - **Opgave 3:** "Sæt verbet i perfektum participium: 'Alex has (win) the greatest treasure of all.'"
+    - Korrekt svar: won
+
+**Level 5: Det Sidste Eventyr**
+
+- **Introduktionstekst:**
+
+```
+Level 5: Det Sidste Eventyr. Alex drager ud på et sidste eventyr for at sikre, at alle uregelmæssige verber er mestret. Hjælp Alex med at fuldføre sin rejse og blive den ultimative Verb Mester!
+```
+
+- **Verber i Level 5:**
+  - Infinitiv: know, throw, eat, fly, grow
+  - Datid: knew, threw, ate, flew, grew
+  - Perfektum participium: known, thrown, eaten, flown, grown
+
+- **Opgaver i Level 5:**
+  - **Opgave 1:** "Sæt verbet i datid: 'Alex (know) the way to the hidden temple.'"
+    - Korrekt svar: knew
+  - **Opgave 2:** "Vælg den korrekte form: 'He (throw) the magical stone into the river.'"
+    - Korrekt svar: threw
+  - **Opgave 3:** "Sæt verbet i perfektum participium: 'The seed has (grow) into a mighty tree.'"
+    - Korrekt svar: grown
+
+#### 3. **Missioner og Udfordringer**
+
+- Hver mission skal have en specifik opgave, hvor spilleren skal vælge den korrekte form af uregelmæssige verber for at komme videre.
+- Interaktive Mini-Spil:
+  - **Verb Battle**: Spilleren kæmper mod en fjende ved at vælge den korrekte verbform. Forkerte valg resulterer i tab af point eller liv.
+  - **Puzzle Game**: Spilleren skal matche de korrekte verbformer til sætninger for at fuldføre puslespillet.
+
+#### 4. **Belønninger og Fremskridt**
+
+- **Point System**: Spilleren optjener point for hvert korrekt svar. Point kan bruges til at købe avatar-til
+
+pasninger eller unlocke nye features.
+- **Badges**: Spilleren får badges for at fuldføre levels, som "Verb Mester", "Dragon Slayer", osv.
+- **Progress Bar**: En progress bar viser spillerens fremskridt gennem spillet.
+
+**Belønningstekst:**
+
+```
+Tillykke! Du har fuldført Level 1 og fået 100 point. Du har nu låst op for 'Verb Mester'-badgen!
+```
+
+#### 5. **Leaderboard**
+
+- Vis en leaderboard, hvor spilleren kan se sine egne og eventuelt familiemedlemmers scores for at tilføje et konkurrenceelement.
+- Leaderboard skal vise navn, score og level.
+
+**Leaderboard-Tekst:**
+
+```
+Top Spillere: Se hvem der er Verb Mester i familien!
+```
+
+#### 6. **Daglige Udfordringer**
+
+- Tilbyd daglige udfordringer, der giver ekstra point eller specielle badges.
+
+**Daglig Udfordringstekst:**
+
+```
+Dagens Udfordring: Brug den korrekte form af 5 verber og få dobbelt point!
+```
+
+### **Designkrav**
+
+- **Tema**: Fantasy/eventyr-tema med farverige illustrationer og animationer, der appellerer til børn.
+- **Farver**: Brug en palette med lyse og engagerende farver, der ikke er for distraherende.
+- **Typografi**: Brug børnevenlige skrifttyper, der er lette at læse, f.eks. sans-serif som Arial eller Comic Sans.
+- **Layout**: Enkelt og intuitivt layout, der gør det nemt for børn at navigere.
+
+### **Indhold**
+
+#### Liste over Uregelmæssige Verber
+
+**Level 1:**
+- Infinitiv: go, see, make, take, come
+- Datid: went, saw, made, took, came
+- Perfektum participium: gone, seen, made, taken, come
+
+**Level 2:**
+- Infinitiv: fight, hide, find, give, take
+- Datid: fought, hid, found, gave, took
+- Perfektum participium: fought, hidden, found, given, taken
+
+**Level 3:**
+- Infinitiv: break, choose, speak, bring, leave
+- Datid: broke, chose, spoke, brought, left
+- Perfektum participium: broken, chosen, spoken, brought, left
+
+**Level 4:**
+- Infinitiv: give, run, win, ride, write
+- Datid: gave, ran, won, rode, wrote
+- Perfektum participium: given, run, won, ridden, written
+
+**Level 5:**
+- Infinitiv: know, throw, eat, fly, grow
+- Datid: knew, threw, ate, flew, grew
+- Perfektum participium: known, thrown, eaten, flown, grown
+
+### **Non-Funktionelle Krav**
+
+- **Performance**: Hjemmesiden skal være hurtig og responsiv, selv med animationer og interaktive elementer.
+- **Brugervenlighed**: UI skal være let for børn at forstå og navigere uden hjælp fra en voksen.
+- **Sikkerhed**: Ingen brugerdata skal indsamles eller opbevares udenfor LocalStorage. Ingen internetforbindelse kræves for at spille.
+
+### **Deployment**
+
+- **Hosting**: Projektet skal hostes på GitHub Pages. Koden skal være veldokumenteret, så den nemt kan opdateres eller ændres i fremtiden.
+- **URL**: Vælg en passende URL, der er let at huske, fx "verb-adventure.github.io".
+
+---
+
+Dette dokument giver en fuldstændig og detaljeret specifikation af både funktionaliteten og indholdet, som er nødvendige for at udvikle den interaktive læringsside om uregelmæssige verber.

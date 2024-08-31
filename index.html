@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbenes Eventyr</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="game-container">
+        <section id="start-screen">
+            <h1>Velkommen til Verbenes Eventyr!</h1>
+            <p>Hjælp ridderen Alex med at redde Verbernes Rige ved at mestre de magiske uregelmæssige verber.</p>
+            <button id="start-button">Start Eventyret</button>
+        </section>
+        <section id="game-screen" class="hidden"></section>
+    </main>
+    <aside id="learned-verbs-container" class="hidden">
+        <h3>Lærte verber</h3>
+        <ul id="learned-verbs-list"></ul>
+    </aside>
+    <div id="feedback-popup" class="hidden">
+        <p id="feedback-text"></p>
+    </div>
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="incorrect-sound" src="incorrect.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

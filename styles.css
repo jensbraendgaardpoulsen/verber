@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #4a4a4a;
+    --secondary-color: #ffd700;
+    --background-color: rgba(0, 0, 0, 0.7);
+    --text-color: #f0e6d2;
+    --font-size-base: clamp(16px, 2vw, 20px);
+    --font-size-large: clamp(24px, 4vw, 32px);
+    --font-size-xlarge: clamp(32px, 6vw, 48px);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-image: url('enchantedforest.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#game-container {
+    background-color: var(--background-color);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+h1 { font-size: var(--font-size-xlarge); }
+h2 { font-size: var(--font-size-large); }
+h3 { font-size: var(--font-size-base); }
+
+button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: var(--font-size-base);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#game-area {
+    margin-top: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.answer-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    font-size: var(--font-size-base);
+}
+
+#progress-container {
+    margin-top: 20px;
+}
+
+#progress-bar {
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progress-fill {
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: width 0.5s ease-in-out;
+}
+
+#progress-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#learned-verbs-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 200px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+#feedback-popup, #verb-explanation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--background-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+    display: none !important;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    #learned-verbs-container {
+        position: static;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
